@@ -1,5 +1,4 @@
 conky.config = {
-
 background = true,
 use_xft = true,
 font = 'MesloLGS NF:size=10',
@@ -67,5 +66,4 @@ ${color white}Down $alignr ${color #00FFFF}${downspeed eth0}
 ${color white}Up $alignr ${color #00FFFF}${upspeed eth0}
 ${color white}Downloaded: $alignr  ${color #00FFFF}${totaldown eth0}
 ${color white}Uploaded: $alignr  ${color #00FFFF}${totalup eth0}
-
 ]]
