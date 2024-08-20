@@ -1,6 +1,0 @@
-#autoload
-#
-function node-docs {
-  local section=${1:-all}
-  open_command "https://nodejs.org/docs/$(node --version)/api/$section.html"
-}
