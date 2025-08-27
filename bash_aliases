@@ -1,10 +1,10 @@
 #Aliases
 #ls aliases
-alias ls='exa -al --color=always --group-directories-first'
-alias la='exa -a --color=always --group-directories-first'
-alias lt='exa -aT --color=always --group-directories-first'
-alias ll='exa -l --color=always --group-directories-first'
-alias l='exa -a | egrep "^\."'
+alias ls='eza -al --color=always --group-directories-first'
+alias la='eza -a --color=always --group-directories-first'
+alias lt='eza -aT --color=always --group-directories-first'
+alias ll='eza -l --color=always --group-directories-first'
+alias l='eza -a | egrep "^\."'
 
 #grep aliases: (good for log/journals)
 alias grep='grep --color=auto'
@@ -201,7 +201,7 @@ complete -F _command showpkg
 #   * treat punctuation as part of words,
 #   * smooth scrolling and
 #   * tab size set to 4 spaces.
-function nanoSU() {
+function nanosu() {
   sudo nano "${_NANO_OPTIONS[@]}" "$@"
 }
 
@@ -365,5 +365,6 @@ function func()
 	done
 	return $status
 }
+
 
 complete -F _longopt func
